@@ -10,15 +10,21 @@ import Footer from "./footer";
 import SkillSection from "./skillsection";
 
 const Layout = ({ children, projects, aboutPics }) => (
-  <div>
-    <Helmet />
-    <Header />
-    <ProjectSection projects={projects} />
-    <SkillSection />
-    <AboutSection aboutPics={aboutPics} />
-    <ContactSection aboutPics={aboutPics} />
-    <Footer />
-  </div>
+  <React.Fragment>
+    {children ? (
+      <main>{children}</main>
+    ) : (
+      <div>
+        <Helmet />
+        <Header />
+        <ProjectSection projects={projects} />
+        <SkillSection />
+        <AboutSection aboutPics={aboutPics} />
+        <ContactSection aboutPics={aboutPics} />
+        <Footer />
+      </div>
+    )}
+  </React.Fragment>
 );
 
 export default Layout;

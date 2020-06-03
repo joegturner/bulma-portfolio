@@ -20,17 +20,17 @@ const Navbar = () => (
           <div className="navbar-end">
             <span className="navbar-item">
               <a className="button is-info is-light" href="/">
-                <span>Top</span>
+                <span>These</span>
               </a>
             </span>
             <span className="navbar-item">
               <a className="button" href="/">
-                <span>Projects</span>
+                <span>Don't</span>
               </a>
             </span>
             <span className="navbar-item">
               <a className="button" href="/">
-                <span>Skills</span>
+                <span>Work</span>
               </a>
             </span>
           </div>

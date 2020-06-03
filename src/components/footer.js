@@ -13,9 +13,6 @@ const Footer = () => (
           siteMetadata {
             gatsby
             bulma
-            twitter
-            medium
-            github
           }
         }
       }
