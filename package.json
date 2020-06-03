@@ -1,8 +1,8 @@
 {
-  "name": "gatsby-bulma-quickstart",
-  "description": "A Project to bootstrap your next Gatsby + Bulma site.",
+  "name": "bulma-portfolio",
+  "description": "My coding projects portfolio",
   "version": "1.10.2",
-  "author": "Aman Mittal <amandeepmittal@live.com>",
+  "author": "Joe Turner <joe.g.turner@gmail.com>",
   "dependencies": {
     "bulma": "^0.8.2",
     "gatsby": "^2.20.18",
@@ -15,6 +15,7 @@
     "gatsby-plugin-sharp": "^2.5.4",
     "gatsby-plugin-sitemap": "^2.3.1",
     "gatsby-source-filesystem": "^2.2.2",
+    "gatsby-transformer-json": "^2.4.4",
     "gatsby-transformer-sharp": "^2.4.4",
     "node-sass": "^4.13.1",
     "react": "^16.13.0",

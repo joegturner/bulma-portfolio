@@ -1,9 +1,10 @@
 module.exports = {
 	siteMetadata: {
-		title: 'Gatsby Bulma Quickstart',
-		author: 'Aman Mittal',
+		title: 'Joe Turner\'s Portfolio',
+		author: 'Joe Turner',
+		image: `src/images/site-pic.png`,
 		imageUrl: 'https://i.imgur.com/Vz81GEl.png',
-		description: 'A Project to bootstrap your next Gatsby + Bulma site.',
+		description: 'Portfolio page for my projects',
 		keywords: `Web developer, Web, Developer, CSS, HTML, JS, Javascript, Gatsby, Bulma Developer, CSS3, HTML5, Seo, Starter`,
 		twitter: 'https://twitter.com/amanhimself',
 		github: `https://github.com/amandeepmittal`,
@@ -12,6 +13,7 @@ module.exports = {
 		bulma: 'https://bulma.io/',
 		siteUrl: `https://www.example.com`
 	},
+	pathPrefix: "/",
 	plugins: [
 		'gatsby-plugin-react-helmet',
 		{
@@ -20,6 +22,14 @@ module.exports = {
 				name: `images`,
 				path: `${__dirname}/src/images`
 			}
+		},
+		`gatsby-transformer-json`,
+		{
+		  resolve: `gatsby-source-filesystem`,
+		  options: {
+			name: `data`,
+			path: `${__dirname}/data`,
+		  },
 		},
 		'gatsby-transformer-sharp',
 		'gatsby-plugin-sharp',
