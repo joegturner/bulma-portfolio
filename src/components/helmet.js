@@ -23,6 +23,7 @@ export default () => (
 					name="viewport"
 					content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"
 				/>
+				<meta name="title" content={data.site.siteMetadata.title} /
 				<meta name="description" content={data.site.siteMetadata.description} />
 				<meta name="keywords" content={data.site.siteMetadata.keywords} />
 				<title>{data.site.siteMetadata.title}</title>
