@@ -32,7 +32,7 @@ const Navbar = () => {
             </a>
             <button
               role="button"
-              class="navbar-burger"
+              className="navbar-burger"
               aria-label="menu"
               aria-expanded="false"
               onClick={() => toggleNavMenu()}

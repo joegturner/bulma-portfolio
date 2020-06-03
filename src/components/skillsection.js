@@ -5,7 +5,7 @@ import "./style.scss";
 const SkillSection = () => {
   return (
     <React.Fragment>
-      <a class="anchor" id="skills"></a>
+      <a className="anchor" id="skills"></a>
       <section className="section gradientBg-skills hero is-fullheight-with-navbar">
         <div className="container">
           <h1 className="title has-text-centered is-uppercase is-size-1">

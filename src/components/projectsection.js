@@ -145,7 +145,7 @@ class ProjectSection extends Component {
   render() {
     return (
       <React.Fragment>
-        <a class="anchor" id="projects"></a>
+        <a className="anchor" id="projects"></a>
         <section className="section has-text-white gradientBg-projects">
           <div className="container">
             <h1 className="has-text-centered is-uppercase is-size-1">

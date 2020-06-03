@@ -9,17 +9,18 @@ import AboutSection from "./aboutsection";
 import ContactSection from "./contactsection";
 import Footer from "./footer";
 import SkillSection from "./skillsection";
+import SEO from "../components/seo";
 
 const Layout = ({ children, projects, aboutPics, errorPic }) => (
   <React.Fragment>
     {children ? (
       <div>
-        <Helmet />
+        <SEO />
         <main>{children}</main>
       </div>
     ) : (
       <div>
-        <Helmet />
+        <SEO />
         <Navbar />
         <Header />
         <ProjectSection projects={projects} />
