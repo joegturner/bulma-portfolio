@@ -1,13 +1,15 @@
 import React from "react";
-import { FaGithub, FaLinkedin, FaMailBulk } from "react-icons/fa";
 import Img from "gatsby-image";
 
+import linkedInLogo from "../images/icon-linkedin.png";
+import gitHubLogo from "../images/icon-github.png";
 import "./style.scss";
 
 const ContactSection = ({ aboutPics }) => {
   return (
-    <div>
-      <section className="section gradientBg-purple">
+    <React.Fragment>
+      <a id="contact"></a>
+      <section className="section gradientBg-contact">
         <div className="container">
           <h1 className="title has-text-centered is-size-1">
             Thank you for visiting my site!
@@ -18,9 +20,8 @@ const ContactSection = ({ aboutPics }) => {
           <div className="columns is-centered has-text-centered">
             <div className="round-edges notification column is-one-fifth">
               <span className="icon">
-                <FaMailBulk size="fa-2x" />
+                <p> joe.g.turner@gmail.com</p>
               </span>
-              <span> joe.g.turner@gmail.com</span>
             </div>
           </div>
 
@@ -33,10 +34,10 @@ const ContactSection = ({ aboutPics }) => {
                       target="_blank"
                       rel="noreferrer"
                       href="https://www.linkedin.com/in/joe-turner-90136044"
-                      className="button is-link is-size-6"
+                      className="button is-light is-link is-size-6"
                     >
                       <span className="icon">
-                        <FaLinkedin size="fa-2x" />
+                        <img className="icon" src={linkedInLogo} alt="Logo-2" />
                       </span>
                       <span> Connect on LinkedIn</span>
                     </a>
@@ -52,10 +53,10 @@ const ContactSection = ({ aboutPics }) => {
                       target="_blank"
                       rel="noreferrer"
                       href="https://github.com/joegturner"
-                      className="button is-link is-size-6"
+                      className="button is-light is-link is-size-6"
                     >
                       <span className="icon">
-                        <FaGithub size="fa-2x" />
+                        <img className="icon" src={gitHubLogo} alt="Logo-2" />
                       </span>
                       <span>Project Source Codes</span>
                     </a>
@@ -81,88 +82,8 @@ const ContactSection = ({ aboutPics }) => {
           </div>
         </div>
       </section>
-    </div>
+    </React.Fragment>
   );
 };
-// const ContactSection = ({ aboutPics }) => {
-// 	return (
-// 	  <div>
-// 		<section className="section gradientBg-purple">
-// 		  <div className="container">
-// 			<h1 className="title">Contact me</h1>
-// 			<h2 className="subtitle">Thank you for visiting my site!</h2>
-// 			<div className="columns is-multiline">
-// 			  <div className="column is-one-third">
-// 				<article className="media">
-// 				  <div className="media-content">
-// 					<div className="content">
-// 					  <a
-// 						href="joe.g.turner@gmail.com"
-// 						className="button is-size-5"
-// 					  >
-// 						<span className="icon">
-// 						  <FaMailBulk size="fa-2x" />
-// 						</span>
-// 						<span>joe.g.turner@gmail.com</span>
-// 					  </a>
-// 					</div>
-// 				  </div>
-// 				</article>
-// 			  </div>
-// 			  <div className="column is-one-third">
-// 				<article className="media">
-// 				  <div className="media-content">
-// 					<div className="content">
-// 					  <a
-// 						href="https://www.linkedin.com/in/joe-turner-90136044"
-// 						className="button is-size-5"
-// 					  >
-// 						<span className="icon">
-// 						  <FaLinkedin size="fa-2x" />
-// 						</span>
-// 						<span>Connect on LinkedIn</span>
-// 					  </a>
-// 					</div>
-// 				  </div>
-// 				</article>
-// 			  </div>
-// 			  <div className="column is-one-third">
-// 				<article className="media">
-// 				  <div className="media-content">
-// 					<div className="content">
-// 					  <a
-// 						href="https://github.com/joegturner"
-// 						className="button is-size-5"
-// 					  >
-// 						<span className="icon">
-// 						  <FaGithub size="fa-2x" />
-// 						</span>
-// 						<span>Project Source Codes</span>
-// 					  </a>
-// 					</div>
-// 				  </div>
-// 				</article>
-// 			  </div>
-// 			</div>
-// 			<div className="tile is-ancestor">
-// 			  <div className="tile is-3"></div>
-// 			  <div className="tile is-6">
-// 				<article className="tile is-child">
-// 				  <figure className="image">
-// 					<Img
-// 					  className="rounded-pic"
-// 					  fluid={aboutPics[0].childImageSharp.fluid}
-// 					  alt="profile_pic"
-// 					/>
-// 				  </figure>
-// 				</article>
-// 			  </div>
-// 			  <div className="tile is-3"></div>
-// 			</div>
-// 		  </div>
-// 		</section>
-// 	  </div>
-// 	);
-//   };
 
 export default ContactSection;

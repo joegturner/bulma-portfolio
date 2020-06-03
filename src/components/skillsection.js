@@ -4,30 +4,24 @@ import "./style.scss";
 
 const SkillSection = () => {
   return (
-    <div>
-      <section className="section gradientBg-green hero is-fullheight-with-navbar">
+    <React.Fragment>
+      <a class="anchor" id="skills"></a>
+      <section className="section gradientBg-skills hero is-fullheight-with-navbar">
         <div className="container">
           <h1 className="title has-text-centered is-uppercase is-size-1">
             Skills
           </h1>
           <div className="tile is-ancestor">
-            <div className="tile is-6 is-parent">
+            <div className="tile is-parent">
               <article className="tile notification is-child is-info">
                 <h3 className="title">Back End</h3>
 
-                <div className="tile is-ancestor" style={{ flex_wrap: "wrap" }}>
+                <div className="tile is-ancestor">
                   <div className="tile is-parent">
-                    <p className="button is-size-6">Express</p>
+                    <p className="tag is-size-6">Express</p>
                   </div>
                   <div className="tile is-parent">
-                    <a
-                      target="_blank"
-                      rel="noreferrer"
-                      href="https://restfulapi.net/"
-                      className="button is-size-6"
-                    >
-                      Rest API
-                    </a>
+                    <p className="tag is-size-6">Rest API</p>
                   </div>
                 </div>
               </article>
@@ -36,35 +30,14 @@ const SkillSection = () => {
               <article className="tile notification is-child is-info">
                 <h3 className="title">Front End</h3>
                 <div className="tile is-ancestor">
-                  <div className="tile is-4 is-parent">
-                    <a
-                      target="_blank"
-                      rel="noreferrer"
-                      href="https://reactjs.org/"
-                      className="button is-size-6"
-                    >
-                      React
-                    </a>
+                  <div className="tile is-parent">
+                    <p className="tag is-size-6">React</p>
                   </div>
-                  <div className="tile is-4 is-parent">
-                    <a
-                      target="_blank"
-                      rel="noreferrer"
-                      href="https://www.gatsbyjs.org/"
-                      className="button is-size-6"
-                    >
-                      Gatsby
-                    </a>
+                  <div className="tile is-parent">
+                    <p className="tag is-size-6">Gatsby</p>
                   </div>
-                  <div className="tile is-4 is-parent">
-                    <a
-                      target="_blank"
-                      rel="noreferrer"
-                      href="https://bulma.io/"
-                      className="button is-size-6"
-                    >
-                      >Bulma
-                    </a>
+                  <div className="tile is-parent">
+                    <p className="tag is-size-6">Bulma</p>
                   </div>
                 </div>
               </article>
@@ -77,44 +50,16 @@ const SkillSection = () => {
 
                 <div className="tile is-ancestor" style={{ flex_wrap: "wrap" }}>
                   <div className="tile is-parent">
-                    <a
-                      target="_blank"
-                      rel="noreferrer"
-                      href="https://www.javascript.com/"
-                      className="button is-size-6"
-                    >
-                      Javascript
-                    </a>
+                    <p className="tag is-size-6">Javascript</p>
                   </div>
                   <div className="tile is-parent">
-                    <a
-                      target="_blank"
-                      rel="noreferrer"
-                      href="https://expressjs.com/"
-                      className="button is-size-6"
-                    >
-                      CSS
-                    </a>
+                    <p className="tag is-size-6">CSS</p>
                   </div>
                   <div className="tile is-parent">
-                    <a
-                      target="_blank"
-                      rel="noreferrer"
-                      href="https://nodejs.org/en/"
-                      className="button is-size-6"
-                    >
-                      Node
-                    </a>
+                    <p className="tag is-size-6">Node</p>
                   </div>
                   <div className="tile is-parent">
-                    <a
-                      target="_blank"
-                      rel="noreferrer"
-                      href="https://git-scm.com/"
-                      className="button is-size-6"
-                    >
-                      Git
-                    </a>
+                    <p className="tag is-size-6">Git</p>
                   </div>
                 </div>
               </article>
@@ -127,34 +72,13 @@ const SkillSection = () => {
 
                 <div className="tile is-ancestor" style={{ flex_wrap: "wrap" }}>
                   <div className="tile is-parent">
-                    <a
-                      target="_blank"
-                      rel="noreferrer"
-                      href="https://expressjs.com/"
-                      className="button is-size-6"
-                    >
-                      SQL
-                    </a>
+                    <p className="tag is-size-6">SQL</p>
                   </div>
                   <div className="tile is-parent">
-                    <a
-                      target="_blank"
-                      rel="noreferrer"
-                      href="https://sequelize.org/"
-                      className="button is-size-6"
-                    >
-                      Sequelize ORM
-                    </a>
+                    <p className="tag is-size-6">Sequelize ORM</p>
                   </div>
                   <div className="tile is-parent">
-                    <a
-                      target="_blank"
-                      rel="noreferrer"
-                      href="https://www.sqlite.org/index.html"
-                      className="button is-size-6"
-                    >
-                      Sqlite
-                    </a>
+                    <p className="tag is-size-6">Sqlite</p>
                   </div>
                 </div>
               </article>
@@ -162,7 +86,7 @@ const SkillSection = () => {
           </div>
         </div>
       </section>
-    </div>
+    </React.Fragment>
   );
 };
 

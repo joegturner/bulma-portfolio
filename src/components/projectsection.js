@@ -9,42 +9,39 @@ class ProjectSection extends Component {
   };
 
   renderTechs(techs) {
-    let jsx = "";
+    let jsx = [];
     for (let i = 0; i < techs.length; i++) {
-      if (i === 0) {
-        jsx = techs[i];
-      } else {
-        jsx = jsx + " / " + techs[i];
-      }
+      jsx.push(
+        <span key={i} className="tag is-light is-medium">
+          {techs[i]}
+        </span>
+      );
     }
-
-    return <h3>{jsx}</h3>;
+    return <div className="tags is-centered">{jsx}</div>;
   }
 
   renderProjects() {
     let jsx = [];
-    let first = 0;
 
     const { projects } = this.props;
-
-    for (let sets = 1; sets <= 3; sets++) {
-      let inner = [];
-
-      for (let j = first; j <= first + 2; j++) {
+    let inner = [];
+    if (projects) {
+      for (let i = 0; i < projects.length; i++) {
         inner.push(
-          <div key={projects[j].index} className="tile is-4 is-parent">
-            <article className="tile is-child notification is-info has-text-centered">
-              <p className="title">{projects[j].project_name}</p>
-              <p className="subtitle">
-                {this.renderTechs(projects[j].technologies)}
-              </p>
+          <div key={i} className="column is-4">
+            <article className="card notification is-info has-text-centered">
+              <p className="title">{projects[i].project_name}</p>
+              <div className="subtitle">
+                {this.renderTechs(projects[i].technologies)}
+              </div>
+
               <figure className="image">
-                <Image imageData={projects[j].cover_image} />
+                <Image imageData={projects[i].cover_image} />
               </figure>
-              <div className="tile notification is-child">
+              <div>
                 <button
-                  className="is-size-3"
-                  onClick={() => this.toggleModal(j)}
+                  className="proj-button button is-link is-light is-medium"
+                  onClick={() => this.toggleModal(i)}
                 >
                   Learn more
                 </button>
@@ -53,17 +50,26 @@ class ProjectSection extends Component {
           </div>
         );
       }
-      jsx.push(<div className="tile is-ancestor">{inner}</div>);
-      first += 3;
     }
+
+    jsx.push(
+      <div key={100} className="columns is-multiline">
+        {inner}
+      </div>
+    );
+
     return jsx;
   }
 
   toggleModal = (index) => {
+    const html = document.querySelector("html");
+    html.classList.add("is-clipped");
     this.setState({ showModal: index });
   };
 
   closeModal = () => {
+    const html = document.querySelector("html");
+    html.classList.remove("is-clipped");
     this.setState({ showModal: null });
   };
 
@@ -77,7 +83,7 @@ class ProjectSection extends Component {
         <div className="modal is-active">
           <div className="modal-background"></div>
           <div className="modal-card">
-            <header className="modal-card-head">
+            <header className="modal-card-head has-background-primary">
               <p className="modal-card-title">{project.project_name}</p>
               <button
                 className="delete"
@@ -88,9 +94,9 @@ class ProjectSection extends Component {
             <section className="modal-card-body">
               <div className="tile is-ancestor">
                 <div className="tile is-parent">
-                  <article className="tile is-child notification is-info has-text-centered">
+                  <article className="tile is-child is-info has-text-black has-text-centered">
                     <p className="is-size-5">{project.description}</p>
-                    <figure className="image">
+                    <figure className="image box">
                       <Image imageData={project.cover_image} />
                     </figure>
                     <p>Utilizes: </p>
@@ -99,35 +105,34 @@ class ProjectSection extends Component {
                 </div>
               </div>
             </section>
-            <footer className="modal-card-foot">
-              <div className="columns">
-                <div className="column">
-                  <a
-                    href={project.live_link}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="button is-link"
-                  >
-                    Live Demo
-                  </a>
-                </div>
-                <div className="column">
-                  <a
-                    href={project.github_link}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="button is-link"
-                  >
-                    Source Code
-                  </a>
-                </div>
-                <div className="column">
-                  {" "}
-                  <button className="button" onClick={() => this.closeModal()}>
-                    Close
-                  </button>
-                </div>
+            <footer className="modal-card-foot tile is-ancestor">
+              {/* <div className="columns is-3"> */}
+              <div className="tile is-parent is-6">
+                <a
+                  href={project.live_link}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="button is-link"
+                >
+                  Live Demo
+                </a>
+                <a
+                  href={project.github_link}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="button is-link"
+                >
+                  Source Code
+                </a>
               </div>
+
+              <div className="tile is-parent is-6">
+                {" "}
+                <button className="button" onClick={() => this.closeModal()}>
+                  Close
+                </button>
+              </div>
+              {/* </div> */}
             </footer>
           </div>
         </div>
@@ -136,10 +141,12 @@ class ProjectSection extends Component {
       return null;
     }
   };
+
   render() {
     return (
-      <div>
-        <section className="section is-medium has-text-white gradientBg-grey">
+      <React.Fragment>
+        <a class="anchor" id="projects"></a>
+        <section className="section has-text-white gradientBg-projects">
           <div className="container">
             <h1 className="has-text-centered is-uppercase is-size-1">
               Projects
@@ -148,7 +155,7 @@ class ProjectSection extends Component {
             {this.renderProjModal()}
           </div>
         </section>
-      </div>
+      </React.Fragment>
     );
   }
 }

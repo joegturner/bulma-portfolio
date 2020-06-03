@@ -1,19 +1,15 @@
-import React from 'react';
+import React from "react";
 
-import Layout from '../components/layout';
+import Layout from "../components/layout";
 
 const IndexPage = ({ data }) => {
+  const projects = data.allDataJson.edges[0].node.projects;
+  let aboutPics = [];
+  aboutPics.push(data.file1);
+  aboutPics.push(data.file2);
 
-    const projects = data.allDataJson.edges[0].node.projects;
-    let aboutPics = [];
-    aboutPics.push(data.file1);
-    aboutPics.push(data.file2);
-
-    return (
-        <Layout projects={projects} aboutPics={aboutPics} />
-    )
-
-}
+  return <Layout projects={projects} aboutPics={aboutPics} />;
+};
 
 export const projectsQuery = graphql`
   query ProjectData {
@@ -28,32 +24,32 @@ export const projectsQuery = graphql`
             live_link
             github_link
             cover_image {
-                src {
-                  publicURL
-                  relativePath
-                  absolutePath
-                  childImageSharp {
-                    fluid {
-                      aspectRatio
-                      originalImg
-                      originalName
-                      presentationWidth
-                      presentationHeight
-                      sizes
-                      src
-                      srcSetWebp
-                      srcSet
-                      srcWebp
-                      tracedSVG
-                    }
+              src {
+                publicURL
+                relativePath
+                absolutePath
+                childImageSharp {
+                  fluid {
+                    aspectRatio
+                    originalImg
+                    originalName
+                    presentationWidth
+                    presentationHeight
+                    sizes
+                    src
+                    srcSetWebp
+                    srcSet
+                    srcWebp
+                    tracedSVG
                   }
                 }
               }
+            }
           }
         }
       }
     }
-    file1: file(relativePath: { eq: "profile_pic.jpg" }) {
+    file1: file(relativePath: { eq: "bio-pic-1.JPG" }) {
       childImageSharp {
         fluid {
           ...GatsbyImageSharpFluid
@@ -68,6 +64,6 @@ export const projectsQuery = graphql`
       }
     }
   }
-`
+`;
 
 export default IndexPage;

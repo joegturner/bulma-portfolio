@@ -5,14 +5,15 @@ import "./style.scss";
 
 const AboutSection = ({ aboutPics }) => {
   return (
-    <div>
-      <section className="section gradientBg-grey hero is-fullheight-with-navbar">
+    <React.Fragment>
+      <a className="anchor" id="about"></a>
+      <section className="section gradientBg-about hero is-fullheight-with-navbar">
         <div className="container">
-          <h1 className="title has-text-centered is-uppercase is-size-1 has-text-white">
+          <h1 className="title has-text-centered is-uppercase is-size-1 has-text-white ">
             About me
           </h1>
           <div className="tile is-ancestor">
-            <div className="tile is-parent is-4">
+            <div className="tile is-parent is-2">
               <article className="tile is-child">
                 <figure className="image is-fullwidth">
                   <Img
@@ -23,22 +24,26 @@ const AboutSection = ({ aboutPics }) => {
                 </figure>
               </article>
             </div>
-            <div className="tile is-parent is-8">
-              <div className="content">
-                <p className="subtitle notification is-size-5">
+            <div className="tile is-parent is-10">
+              <div className="content notification">
+                <p className="subtitle is-size-5">
                   {" "}
                   I was born and raised in Portland, OR, moved to Miami in 2019,
-                  and now currently residing in New York City. I have been
-                  working as an Instrumentation and controls engineer in both
-                  controls design and system integration within the Industrial
-                  setting for 8 years.{" "}
+                  and now currently residing in New York City.{" "}
                 </p>
-                <p className="subtitle notification is-size-5">
+                <p className="subtitle is-size-5">
+                  {" "}
+                  I have been working as an Instrumentation and controls
+                  engineer in both controls design and system integration within
+                  the Industrial setting for 8 years.{" "}
+                </p>
+                <p className="subtitle is-size-5">
                   I've discovered a passion for coding, and decided to pursuit
                   my new interests by learning full stack javascript
                   development. I am excited to say that I am now actively
                   seeking an opportunity to pursuit my newly discovered passion
-                  as a JavaScript Developer. Thank you for visiting my site!{" "}
+                  as a JavaScript Developer.{" "}
+                  <strong>Thank you for visiting my site!</strong>{" "}
                 </p>
               </div>
             </div>
@@ -68,7 +73,7 @@ const AboutSection = ({ aboutPics }) => {
           </div>
         </div>
       </section>
-    </div>
+    </React.Fragment>
   );
 };
 

@@ -1,218 +1,175 @@
 {
-    "projects": [
-        {
-            "id": 1,
-            "project_name": "Fullstack Courses App",
-            "description": "Fictional courses manager with React rendering the UI and Express as the restful API server which runs a relational database using the promised based ORM called sequelize.",
-            "technologies": [
-                "Node",
-                "React",
-                "Rest API",
-                "Express",
-                "Sequelize ORM"
-            ],
-            "live_link": "https://jgturner-fullstack-courses.herokuapp.com/",
-            "github_link": "https://github.com/joegturner/Fullstack-React-REST",
-            "cover_image": {
-                "src": "../src/images/courses-fullstack_cover_photo.png"
-            },
-            "image1": {
-                "src": "../src/images/courses-fullstack_image1.jpg"
-            },
-            "image2": {
-                "src": "../src/images/courses-fullstack_image2.jpg"
-            },
-            "image3": {
-                "src": "../src/images/courses-fullstack_image3.jpg"
-            }
-        }, 
-        {
-            "id": 2,
-            "project_name": "Sequelize Library",
-            "description": "Fictional Library books manager used to create, delete, and edit books with pagination and search functionality. Built with Express rendering Pug views and a relational database using the promise based ORM called sequelize.",
-            "technologies": [
-                "Node",
-                "Express",
-                "Pug",
-                "Sequelize ORM"
-            ],
-            "live_link": "https://jgturner-sql-library-manager.herokuapp.com/books",
-            "github_link": "https://github.com/joegturner/SQL-Library-Manager",
-            "cover_image": {
-                "src": "../src/images/sql-library_cover_photo.png"
-            },
-            "image1": {
-                "src": "../src/images/sql-library_image1.jpg"
-            },
-            "image2": {
-                "src": "../src/images/sql-library_image2.jpg"
-            },
-            "image3": {
-                "src": "../src/images/sql-library_image3.jpg"
-            }
-        },
-        {
-            "id": 3,
-            "project_name": "React Gallery",
-            "description": "Photo Gallery with React rendering the UI and photos fetched from Flickr's public API",
-            "technologies": [
-                "Javascript",
-                "React",
-                "Fetch Flikr API"
-            ],
-            "live_link": "https://joegturner.github.io/React-Gallery",
-            "github_link": "https://github.com/joegturner/React-Gallery",
-            "cover_image": {
-                "src": "../src/images/react-gallery_cover_photo.png"
-            },
-            "image1": {
-                "src": "../src/images/react-gallery_image1.jpg"
-            },
-            "image2": {
-                "src": "../src/images/react-gallery_image2.jpg"
-            },
-            "image3": {
-                "src": "../src/images/react-gallery_image3.jpg"
-            }
-        },
-        {
-            "id": 4,
-            "project_name": "Public API Requests",
-            "description": "Fictional employee list fetched from an API with search functionality",
-            "technologies": [
-                "Javascript",
-                "API fetch Requests",
-                "Object-Oriented Programming",
-                "DOM Manipulation",
-                "Event Handlers"
-            ],
-            "live_link": "https://joegturner.github.io/Public-API-Requests/",
-            "github_link": "https://github.com/joegturner/Public-API-Requests",
-            "cover_image": {
-                "src": "../src/images/api-list_cover_photo.png"
-            },
-            "image1": {
-                "src": "../src/images/api-list_image1.jpg"
-            },
-            "image2": {
-                "src": "../src/images/api-list_image2.jpg"
-            }
-        },
-        {
-            "id": 5,
-            "project_name": "Phrase Guessing Game",
-            "description": "Guess the hidden phrase with a limited number of guesses",
-            "technologies": [
-                "Javascript",
-                "object-oriented programming",
-                "DOM Manipulation",
-                "Event Handlers"
-            ],
-            "live_link": "https://joegturner.github.io/Phrase-Guessing-Game/",
-            "github_link": "https://github.com/joegturner/Phrase-Guessing-Game",
-            "cover_image": {
-                "src": "../src/images/phrase-hunter_cover_photo.png"
-            },
-            "image1": {
-                "src": "../src/images/phrase-hunter_image1.jpg"
-            },
-            "image2": {
-                "src": "../src/images/phrase-hunter_image2.jpg"
-            },
-            "image3": {
-                "src": "../src/images/phrase-hunter_image3.jpg"
-            }
-        },
-        {
-            "id": 6,
-            "project_name": "Interactive Form",
-            "description": "Interactive registration form for a fictional conference",
-            "technologies": [
-                "Javascript",
-                "DOM Manipulation",
-                "Event Handlers",
-                "Form Manipulation"
-            ],
-            "live_link": "https://joegturner.github.io/Interactive-Form/",
-            "github_link": "https://github.com/joegturner/Interactive-Form",
-            "cover_image": {
-                "src": "../src/images/form_cover_photo.png"
-            },
-            "image1": {
-                "src": "../src/images/form_image1.jpg"
-            },
-            "image2": {
-                "src": "../src/images/form_image2.jpg"
-            },
-            "image3": {
-                "src": "../src/images/form_image3.jpg"
-            }
-        },
-        {
-            "id": 7,
-            "project_name": "Pagination and Filtering",
-            "description": "A fictional list of students with pagination and search functionality",
-            "technologies": [
-                "Javascript",
-                "DOM Manipulation",
-                "Event Handlers"
-            ],
-            "live_link": "https://joegturner.github.io/List-Pagination/",
-            "github_link": "https://github.com/joegturner/List-Pagination",
-            "cover_image": {
-                "src": "../src/images/pagination_cover_photo.png"
-            },
-            "image1": {
-                "src": "../src/images/pagination_image1.jpg"
-            },
-            "image2": {
-                "src": "../src/images/pagination_image2.jpg"
-            }
-        },
-        {
-            "id": 8,
-            "project_name": "Connect Four",
-            "description": "Use the arrow keys to move and drop a piece. 2 players take turns and the player to line up 4 pieces in a row, wins!",
-            "technologies": [
-                "Javascript",
-                "Object-Oriented Programming",
-                "DOM Manipulation",
-                "Event Handlers"
-            ],
-            "live_link": "https://joegturner.github.io/Game-Connect-Four//",
-            "github_link": "https://github.com/joegturner/Game-Connect-Four",
-            "cover_image": {
-                "src": "../src/images/connect-four_cover_photo.png"
-            },
-            "image1": {
-                "src": "../src/images/connect-four_image1.jpg"
-            },
-            "image2": {
-                "src": "../src/images/connect-four_image2.jpg"
-            }
-        },
-        {
-            "id": 9,
-            "project_name": "Random Quote Generator",
-            "description": "Generates a random quote every 20 seconds or when the button is clicked",
-            "technologies": [
-                "Javascript",
-                "DOM Manipulation"
-            ],
-            "live_link": "https://joegturner.github.io/Random-Quote-Gen/",
-            "github_link": "https://github.com/joegturner/Random-Quote-Gen",
-            "cover_image": {
-                "src": "../src/images/rand-quote_cover_photo.png"
-            },
-            "image1": {
-                "src": "../src/images/rand-quote_image1.jpg"
-            },
-            "image2": {
-                "src": "../src/images/rand-quote_image2.jpg"
-            },
-            "image3": {
-                "src": "../src/images/rand-quote_image3.jpg"
-            }
-        }
-    ]
+  "projects": [
+    {
+      "id": 1,
+      "project_name": "Fullstack Courses App",
+      "description": "Fictional courses manager with React rendering the UI and Express as the restful API server which runs a relational database using the promised based ORM called sequelize.",
+      "technologies": ["Node", "React", "Rest API", "Express", "Sequelize ORM"],
+      "live_link": "https://jgturner-fullstack-courses.herokuapp.com/",
+      "github_link": "https://github.com/joegturner/Fullstack-React-REST",
+      "cover_image": {
+        "src": "../src/images/courses-fullstack_cover_photo.png"
+      },
+      "image1": {
+        "src": "../src/images/courses-fullstack_image1.jpg"
+      },
+      "image2": {
+        "src": "../src/images/courses-fullstack_image2.jpg"
+      },
+      "image3": {
+        "src": "../src/images/courses-fullstack_image3.jpg"
+      }
+    },
+    {
+      "id": 2,
+      "project_name": "Sequelize Library",
+      "description": "Fictional Library books manager used to create, delete, and edit books with pagination and search functionality. Built with Express rendering Pug views and a relational database using the promise based ORM called sequelize.",
+      "technologies": ["Node", "Express", "Pug", "Sequelize ORM"],
+      "live_link": "https://jgturner-sql-library-manager.herokuapp.com/books",
+      "github_link": "https://github.com/joegturner/SQL-Library-Manager",
+      "cover_image": {
+        "src": "../src/images/sql-library_cover_photo.png"
+      },
+      "image1": {
+        "src": "../src/images/sql-library_image1.jpg"
+      },
+      "image2": {
+        "src": "../src/images/sql-library_image2.jpg"
+      },
+      "image3": {
+        "src": "../src/images/sql-library_image3.jpg"
+      }
+    },
+    {
+      "id": 3,
+      "project_name": "React Gallery",
+      "description": "Photo Gallery with React rendering the UI and photos fetched from Flickr's public API",
+      "technologies": ["React", "Fetch API"],
+      "live_link": "https://joegturner.github.io/React-Gallery",
+      "github_link": "https://github.com/joegturner/React-Gallery",
+      "cover_image": {
+        "src": "../src/images/react-gallery_cover_photo.png"
+      },
+      "image1": {
+        "src": "../src/images/react-gallery_image1.jpg"
+      },
+      "image2": {
+        "src": "../src/images/react-gallery_image2.jpg"
+      },
+      "image3": {
+        "src": "../src/images/react-gallery_image3.jpg"
+      }
+    },
+    {
+      "id": 4,
+      "project_name": "Public API Requests",
+      "description": "Fictional employee list fetched from an API with search functionality",
+      "technologies": ["Fetch API", "OOP", "DOM Manipulation"],
+      "live_link": "https://joegturner.github.io/Public-API-Requests/",
+      "github_link": "https://github.com/joegturner/Public-API-Requests",
+      "cover_image": {
+        "src": "../src/images/api-list_cover_photo.png"
+      },
+      "image1": {
+        "src": "../src/images/api-list_image1.jpg"
+      },
+      "image2": {
+        "src": "../src/images/api-list_image2.jpg"
+      }
+    },
+    {
+      "id": 5,
+      "project_name": "Phrase Guessing Game",
+      "description": "Guess the hidden phrase with a limited number of guesses",
+      "technologies": ["OOP", "DOM Manipulation"],
+      "live_link": "https://joegturner.github.io/Phrase-Guessing-Game/",
+      "github_link": "https://github.com/joegturner/Phrase-Guessing-Game",
+      "cover_image": {
+        "src": "../src/images/phrase-hunter_cover_photo.png"
+      },
+      "image1": {
+        "src": "../src/images/phrase-hunter_image1.jpg"
+      },
+      "image2": {
+        "src": "../src/images/phrase-hunter_image2.jpg"
+      },
+      "image3": {
+        "src": "../src/images/phrase-hunter_image3.jpg"
+      }
+    },
+    {
+      "id": 6,
+      "project_name": "Interactive Form",
+      "description": "Interactive registration form for a fictional conference",
+      "technologies": ["DOM Manipulation", "Forms"],
+      "live_link": "https://joegturner.github.io/Interactive-Form/",
+      "github_link": "https://github.com/joegturner/Interactive-Form",
+      "cover_image": {
+        "src": "../src/images/form_cover_photo.png"
+      },
+      "image1": {
+        "src": "../src/images/form_image1.jpg"
+      },
+      "image2": {
+        "src": "../src/images/form_image2.jpg"
+      },
+      "image3": {
+        "src": "../src/images/form_image3.jpg"
+      }
+    },
+    {
+      "id": 7,
+      "project_name": "Pagination and Filtering",
+      "description": "A fictional list of students with pagination and search functionality",
+      "technologies": ["DOM Manipulation"],
+      "live_link": "https://joegturner.github.io/List-Pagination/",
+      "github_link": "https://github.com/joegturner/List-Pagination",
+      "cover_image": {
+        "src": "../src/images/pagination_cover_photo.png"
+      },
+      "image1": {
+        "src": "../src/images/pagination_image1.jpg"
+      },
+      "image2": {
+        "src": "../src/images/pagination_image2.jpg"
+      }
+    },
+    {
+      "id": 8,
+      "project_name": "Connect Four",
+      "description": "Use the arrow keys to move and drop a piece. 2 players take turns and the player to line up 4 pieces in a row, wins!",
+      "technologies": ["OOP", "DOM Manipulation"],
+      "live_link": "https://joegturner.github.io/Game-Connect-Four//",
+      "github_link": "https://github.com/joegturner/Game-Connect-Four",
+      "cover_image": {
+        "src": "../src/images/connect-four_cover_photo.png"
+      },
+      "image1": {
+        "src": "../src/images/connect-four_image1.jpg"
+      },
+      "image2": {
+        "src": "../src/images/connect-four_image2.jpg"
+      }
+    },
+    {
+      "id": 9,
+      "project_name": "Random Quote Generator",
+      "description": "Generates a random quote every 20 seconds or when the button is clicked",
+      "technologies": ["DOM Manipulation"],
+      "live_link": "https://joegturner.github.io/Random-Quote-Gen/",
+      "github_link": "https://github.com/joegturner/Random-Quote-Gen",
+      "cover_image": {
+        "src": "../src/images/rand-quote_cover_photo.png"
+      },
+      "image1": {
+        "src": "../src/images/rand-quote_image1.jpg"
+      },
+      "image2": {
+        "src": "../src/images/rand-quote_image2.jpg"
+      },
+      "image3": {
+        "src": "../src/images/rand-quote_image3.jpg"
+      }
+    }
+  ]
 }

@@ -4,7 +4,7 @@ module.exports = {
     author: "Joe Turner",
     image: `src/images/site-pic.png`,
     imageUrl: "src/images/site-pic.png",
-    description: "Portfolio page for my projects",
+    description: "Portfolio showcasing coding projects",
     keywords: `Web developer, Web, Developer, CSS, HTML, JS, Javascript, Gatsby, Bulma Developer, CSS3, HTML5, Seo, Starter`,
 
     gatsby: "https://www.gatsbyjs.org/",
@@ -40,7 +40,7 @@ module.exports = {
         background_color: "#2980b9",
         theme_color: "#2980b9",
         display: "standalone",
-        icon: "src/images/gatsby-icon.png",
+        icon: `src/images/face-icon.png`,
         orientation: "portrait",
       },
     },
