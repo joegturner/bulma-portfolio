@@ -11,6 +11,8 @@ import Footer from "./footer";
 import SkillSection from "./skillsection";
 import SEO from "../components/seo";
 
+import HeaderGen from "./header-gen";
+
 const Layout = ({ children, projects, aboutPics, errorPic }) => (
   <React.Fragment>
     {children ? (
@@ -23,6 +25,7 @@ const Layout = ({ children, projects, aboutPics, errorPic }) => (
         <SEO />
         <Navbar />
         <Header />
+        <HeaderGen />
         <ProjectSection projects={projects} />
         <SkillSection />
         <AboutSection aboutPics={aboutPics} />

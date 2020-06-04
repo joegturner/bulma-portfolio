@@ -2,7 +2,7 @@ import React from "react";
 
 import "./style.scss";
 
-const Header = () => (
+const HeaderOne = () => (
   <>
     <a id="top"></a>
     <section className="hero gradientBg-header is-fullheight-with-navbar">
@@ -11,7 +11,7 @@ const Header = () => (
           <article className="media">
             <div className="media-content">
               <div className="content has-text-centered">
-                <h1 id="name-text" className="">
+                <h1 id="name-text-1" className="">
                   Joe Turner
                 </h1>
                 <p className="subtitle is-size-3">
@@ -20,9 +20,7 @@ const Header = () => (
                 <p className="subtitle is-size-4">
                   and Aspiring Fullstack Javascript Developer
                 </p>
-                <p className="subtitle is-size-5">
-                  (this is like a regular font )
-                </p>
+                <p className="subtitle is-size-2">Font called: Bungee Inline</p>
               </div>
             </div>
           </article>
@@ -32,4 +30,4 @@ const Header = () => (
   </>
 );
 
-export default Header;
+export default HeaderOne;

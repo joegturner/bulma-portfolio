@@ -11,16 +11,16 @@ const ContactSection = ({ aboutPics }) => {
       <a id="contact"></a>
       <section className="section gradientBg-contact">
         <div className="container">
-          <h1 className="title has-text-centered is-size-1">
+          <h1 id="section-title" className="title has-text-centered is-size-1">
             Thank you for visiting my site!
           </h1>
           <h2 className="subtitle has-text-centered is-size-3">
             Please reach out at:
           </h2>
           <div className="columns is-centered has-text-centered">
-            <div className="round-edges notification column is-one-fifth">
-              <span className="icon">
-                <p> joe.g.turner@gmail.com</p>
+            <div id="email-box" className="notification column is-one-fifth">
+              <span className="tag">
+                <p className="is-size-5"> joe.g.turner@gmail.com</p>
               </span>
             </div>
           </div>
@@ -31,6 +31,7 @@ const ContactSection = ({ aboutPics }) => {
                 <div className="media-content">
                   <div className="content">
                     <a
+                      id="button-1"
                       target="_blank"
                       rel="noreferrer"
                       href="https://www.linkedin.com/in/joe-turner-90136044"
@@ -50,6 +51,7 @@ const ContactSection = ({ aboutPics }) => {
                 <div className="media-content">
                   <div className="content">
                     <a
+                      id="button-1"
                       target="_blank"
                       rel="noreferrer"
                       href="https://github.com/joegturner"
@@ -71,7 +73,7 @@ const ContactSection = ({ aboutPics }) => {
               <article className="tile is-child">
                 <figure className="image">
                   <Img
-                    className="rounded-pic"
+                    className="contact-pic"
                     fluid={aboutPics[0].childImageSharp.fluid}
                     alt="profile_pic"
                   />

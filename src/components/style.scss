@@ -5,62 +5,219 @@
 @import "~bulma/bulma.sass";
 
 @import url(https://fonts.googleapis.com/css2?family=Bungee+Inline&display=swap);
+#name-text-1 {
+  font-family: "Bungee Inline", cursive;
+  font-size: 400%;
+}
+
+@import url(https://fonts.googleapis.com/css2?family=Vollkorn:wght@900&display=swap);
+#name-text-2 {
+  font-family: "Vollkorn", serif;
+  font-size: 400%;
+}
+
+@import url(https://fonts.googleapis.com/css2?family=Bowlby+One+SC&display=swap);
+#name-text-3 {
+  font-family: "Bowlby One SC", cursive;
+  font-size: 400%;
+}
+
+@import url(https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap);
+#name-text-4 {
+  font-family: "Major Mono Display", monospace;
+  font-size: 400%;
+}
+
+@import url(https://fonts.googleapis.com/css2?family=Oswald&display=swap);
+#name-text-5 {
+  font-family: "Oswald", sans-serif;
+  font-size: 400%;
+}
+
+@import url(https://fonts.googleapis.com/css2?family=Mukta&display=swap);
+#name-text-6 {
+  font-family: "Mukta", sans-serif;
+  font-size: 400%;
+}
+
+@import url(https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap);
+#name-text-7 {
+  font-family: "Libre Baskerville", serif;
+  font-size: 400%;
+}
+
+@import url(https://fonts.googleapis.com/css2?family=News+Cycle&display=swap);
+#name-text-8 {
+  font-family: "News Cycle", sans-serif;
+  font-size: 400%;
+}
+
+@import url(https://fonts.googleapis.com/css2?family=Encode+Sans&display=swap);
+#name-text-9 {
+  font-family: "Encode Sans", sans-serif;
+  font-size: 400%;
+}
+
+@import url(https://fonts.googleapis.com/css2?family=Arimo&display=swap);
+#name-text-10 {
+  font-family: "Arimo", sans-serif;
+  font-size: 400%;
+}
+@import url(https://fonts.googleapis.com/css2?family=Alata&display=swap);
+#name-text-11 {
+  font-family: "Alata", sans-serif;
+  font-size: 400%;
+}
+
+@import url(https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap);
+#name-text-12 {
+  font-family: "Permanent Marker", cursive;
+  font-size: 400%;
+}
+
+@import url(https://fonts.googleapis.com/css2?family=Trocchi&display=swap);
+#name-text-13 {
+  font-family: "Trocchi", serif;
+  font-size: 400%;
+}
+
+@import url(https://fonts.googleapis.com/css2?family=Notable&display=swap);
+#name-text-14 {
+  font-family: "Notable", sans-serif;
+  font-size: 400%;
+}
+
+@import url(https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&display=swap);
+#name-text-15 {
+  font-family: "Cinzel Decorative", cursive;
+  font-size: 400%;
+}
+
+@import url(https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap);
+#name-text-16 {
+  font-family: "Fredericka the Great", cursive;
+  font-size: 400%;
+}
+
+@import url(https://fonts.googleapis.com/css2?family=IM+Fell+Double+Pica+SC&display=swap);
+#name-text-17 {
+  font-family: "IM Fell Double Pica SC", serif;
+  font-size: 400%;
+}
+@import url(https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@700&display=swap);
+#name-text-18 {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 400%;
+}
+
+#name-text {
+  font-size: 400%;
+}
+
+* {
+  -webkit-overflow-scrolling: touch;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+// body {
+//   scroll-behavior: smooth;
+// }
 
 .gradientBg-header {
   display: flex;
-  background-image: linear-gradient(
-    to top,
-    #5ba4ec 0%,
-    #d7d2cc 48%,
-    #5ba4ec 100%
-  );
+  // background-image: linear-gradient(
+  //   to top,
+  //   #5ba4ec 0%,
+  //   #d7d2cc 48%,
+  //   #5ba4ec 100%
+  // );
   // background: linear-gradient(to right, $primary-color, $secondary-color);
+  background-color: $header-sect-bg-color;
 }
 
 .gradientBg-projects {
   display: flex;
-  background-color: #2d5a68;
+  // background-color: #2d5a68;
+  // background-color: #e1e4e6;
+  background-color: $proj-sect-bg-color;
 }
 
 .gradientBg-skills {
   display: flex;
-  background-image: linear-gradient(
-    20deg,
-    #fddb92 0%,
-    #b8dcff 48%,
-    #fddb92 100%
-  );
+  // background-image: linear-gradient(
+  //   20deg,
+  //   #fddb92 0%,
+  //   #b8dcff 48%,
+  //   #fddb92 100%
+  // );
+  background-color: $skills-sect-bg-color;
 }
 
 .gradientBg-about {
   display: flex;
-  background-color: #2d5a68;
+  // background-color: #2d5a68;
+  background-color: $about-sect-bg-color;
 }
 
 .gradientBg-contact {
   display: flex;
 
-  background-image: linear-gradient(
-    to top,
-    #5ba4ec 0%,
-    #d7d2cc 48%,
-    #5ba4ec 100%
-  );
+  // background-image: linear-gradient(
+  //   to top,
+  //   #5ba4ec 0%,
+  //   #d7d2cc 48%,
+  //   #5ba4ec 100%
+  // );
+  background-color: $contact-sect-bg-color;
 }
 
 .gradientBg-error {
   background-image: linear-gradient(45deg, #93a5cf 0%, #e4efe9 100%);
 }
 
+#section-title {
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
+#proj-card {
+  background-color: $proj-card-bg-color;
+}
+#proj-techs {
+  background-color: $techs-bg-color;
+}
+#skill-card {
+  background-color: $skill-card-bg-color;
+}
+
+#about-card {
+  background-color: $about-card-bg-color;
+  border: 1px solid $edu-card-bg-color;
+}
+.about-pic {
+  border-radius: 50%;
+  border: 1.5px solid $edu-card-bg-color;
+}
+#edu-card {
+  background-color: $edu-card-bg-color;
+}
+.contact-pic {
+  border-radius: 50%;
+  border: 1.5px solid $contact-card-bg-color;
+}
+#button-1 {
+  border: 1px solid #000;
+}
+#email-box {
+  border: 1px solid $contact-card-bg-color;
+}
 a.anchor {
   display: block;
   position: relative;
   top: -50px;
   visibility: hidden;
-}
-
-#name-text {
-  font-family: "Bungee Inline", cursive;
 }
 
 #navbarMenu {
@@ -75,6 +232,11 @@ a.anchor {
 }
 .navbar-end {
   padding: 0.5% 0 0.5% 0;
+}
+
+.navbar-burger {
+  color: #fff;
+  background-color: #000;
 }
 
 .rounded-pic {
@@ -93,10 +255,6 @@ a.anchor {
 article.card {
   padding: 1rem 1rem 1rem 1rem;
   height: 100%;
-  .subtitle {
-    height: 60px;
-  }
-
   .proj-button {
     margin-top: 1vw;
   }
@@ -113,10 +271,6 @@ article.card {
   a:hover {
     color: $secondary-color;
   }
-}
-
-html {
-  scroll-behavior: smooth;
 }
 
 /** gradient for whole site **/

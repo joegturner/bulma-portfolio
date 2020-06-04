@@ -12,7 +12,7 @@ class ProjectSection extends Component {
     let jsx = [];
     for (let i = 0; i < techs.length; i++) {
       jsx.push(
-        <span key={i} className="tag is-light is-medium">
+        <span key={i} className="tag is-link is-medium">
           {techs[i]}
         </span>
       );
@@ -29,23 +29,23 @@ class ProjectSection extends Component {
       for (let i = 0; i < projects.length; i++) {
         inner.push(
           <div key={i} className="column is-4">
-            <article className="card notification is-info has-text-centered">
-              <p className="title">{projects[i].project_name}</p>
-              <div className="subtitle">
-                {this.renderTechs(projects[i].technologies)}
-              </div>
-
-              <figure className="image">
-                <Image imageData={projects[i].cover_image} />
-              </figure>
-              <div>
+            <article id="proj-card" className="card is-info has-text-centered">
+              <p className="is-size-4">{projects[i].project_name}</p>
+              <div className="content">
                 <button
-                  className="proj-button button is-link is-light is-medium"
+                  className="proj-button button is-light is-size-6"
                   onClick={() => this.toggleModal(i)}
                 >
                   Learn more
                 </button>
               </div>
+
+              <figure className="content image">
+                <Image imageData={projects[i].cover_image} />
+              </figure>
+              {/* <div id="proj-techs" className="content"> */}
+              {this.renderTechs(projects[i].technologies)}
+              {/* </div> */}
             </article>
           </div>
         );
@@ -83,7 +83,7 @@ class ProjectSection extends Component {
         <div className="modal is-active">
           <div className="modal-background"></div>
           <div className="modal-card">
-            <header className="modal-card-head has-background-primary">
+            <header id="proj-card" className="modal-card-head">
               <p className="modal-card-title">{project.project_name}</p>
               <button
                 className="delete"
@@ -94,7 +94,7 @@ class ProjectSection extends Component {
             <section className="modal-card-body">
               <div className="tile is-ancestor">
                 <div className="tile is-parent">
-                  <article className="tile is-child is-info has-text-black has-text-centered">
+                  <article className="tile is-child has-text-black has-text-centered">
                     <p className="is-size-5">{project.description}</p>
                     <figure className="image box">
                       <Image imageData={project.cover_image} />
@@ -106,13 +106,12 @@ class ProjectSection extends Component {
               </div>
             </section>
             <footer className="modal-card-foot tile is-ancestor">
-              {/* <div className="columns is-3"> */}
               <div className="tile is-parent is-6">
                 <a
                   href={project.live_link}
                   target="_blank"
                   rel="noreferrer"
-                  className="button is-link"
+                  className="button"
                 >
                   Live Demo
                 </a>
@@ -120,7 +119,7 @@ class ProjectSection extends Component {
                   href={project.github_link}
                   target="_blank"
                   rel="noreferrer"
-                  className="button is-link"
+                  className="button"
                 >
                   Source Code
                 </a>
@@ -128,11 +127,10 @@ class ProjectSection extends Component {
 
               <div className="tile is-parent is-6">
                 {" "}
-                <button className="button" onClick={() => this.closeModal()}>
+                <span className="button" onClick={() => this.closeModal()}>
                   Close
-                </button>
+                </span>
               </div>
-              {/* </div> */}
             </footer>
           </div>
         </div>
@@ -146,9 +144,12 @@ class ProjectSection extends Component {
     return (
       <React.Fragment>
         <a className="anchor" id="projects"></a>
-        <section className="section has-text-white gradientBg-projects">
+        <section className="section has-text-black gradientBg-projects">
           <div className="container">
-            <h1 className="has-text-centered is-uppercase is-size-1">
+            <h1
+              id="section-title"
+              className="has-text-centered is-uppercase is-size-1"
+            >
               Projects
             </h1>
             {this.renderProjects()}

@@ -8,12 +8,18 @@ const SkillSection = () => {
       <a className="anchor" id="skills"></a>
       <section className="section gradientBg-skills hero is-fullheight-with-navbar">
         <div className="container">
-          <h1 className="title has-text-centered is-uppercase is-size-1">
+          <h1
+            id="section-title"
+            className="title has-text-centered is-uppercase is-size-1"
+          >
             Skills
           </h1>
           <div className="tile is-ancestor">
             <div className="tile is-parent">
-              <article className="tile notification is-child is-info">
+              <article
+                id="skill-card"
+                className="tile notification is-child is-info"
+              >
                 <h3 className="title">Back End</h3>
 
                 <div className="tile is-ancestor">
@@ -27,7 +33,10 @@ const SkillSection = () => {
               </article>
             </div>
             <div className="tile is-6 is-parent">
-              <article className="tile notification is-child is-info">
+              <article
+                id="skill-card"
+                className="tile notification is-child is-info"
+              >
                 <h3 className="title">Front End</h3>
                 <div className="tile is-ancestor">
                   <div className="tile is-parent">
@@ -39,13 +48,19 @@ const SkillSection = () => {
                   <div className="tile is-parent">
                     <p className="tag is-size-6">Bulma</p>
                   </div>
+                  <div className="tile is-parent">
+                    <p className="tag is-size-6">GraphQL</p>
+                  </div>
                 </div>
               </article>
             </div>
           </div>
           <div className="tile is-ancestor">
             <div className="tile is-6 is-parent">
-              <article className="tile notification is-child is-info">
+              <article
+                id="skill-card"
+                className="tile notification is-child is-info"
+              >
                 <h3 className="title">Development</h3>
 
                 <div className="tile is-ancestor" style={{ flex_wrap: "wrap" }}>
@@ -67,7 +82,10 @@ const SkillSection = () => {
           </div>
           <div className="tile is-ancestor">
             <div className="tile is-6 is-parent">
-              <article className="tile notification is-child is-info">
+              <article
+                id="skill-card"
+                className="tile notification is-child is-info"
+              >
                 <h3 className="title">Database</h3>
 
                 <div className="tile is-ancestor" style={{ flex_wrap: "wrap" }}>
