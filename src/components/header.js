@@ -1,6 +1,7 @@
 import React from "react";
 
 import "./style.scss";
+import scrollIcon from "../images/scroll-down-icon.jpg";
 
 const Header = () => (
   <>
@@ -11,21 +12,27 @@ const Header = () => (
           <article className="media">
             <div className="media-content">
               <div className="content has-text-centered">
-                <h1 id="name-text" className="">
+                <h1 id="name-text" className="title has-text-black">
                   Joe Turner
                 </h1>
-                <p className="subtitle is-size-3">
-                  Problem Solver / Engineer / Lifelong Learner{" "}
-                </p>
-                <p className="subtitle is-size-4">
-                  and Aspiring Fullstack Javascript Developer
-                </p>
-                <p className="subtitle is-size-5">
-                  (this is like a regular font )
-                </p>
+
+                <h1 id="h1-font" className="subtitle is-size-2">
+                  Fullstack Javascript Developer{" "}
+                </h1>
+
+                <p className="subtitle is-size-5">(this one is my fav font)</p>
               </div>
             </div>
           </article>
+        </div>
+      </div>
+      <div className="has-text-centered">
+        {" "}
+        <p id="h1-font" className="subtitle is-italic is-size-4">
+          Welcome to my Portfolio Site
+        </p>
+        <div className="add-margin-bottom">
+          <img className="icon is-large" src={scrollIcon} alt="Logo-2" />
         </div>
       </div>
     </section>

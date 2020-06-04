@@ -1,7 +1,7 @@
 import React from "react";
 
 import "./style.scss";
-import Helmet from "./helmet";
+
 import Header from "./header";
 import Navbar from "./navbar";
 import ProjectSection from "./projectsection";
@@ -25,7 +25,7 @@ const Layout = ({ children, projects, aboutPics, errorPic }) => (
         <SEO />
         <Navbar />
         <Header />
-        <HeaderGen />
+        {/* <HeaderGen /> */}
         <ProjectSection projects={projects} />
         <SkillSection />
         <AboutSection aboutPics={aboutPics} />

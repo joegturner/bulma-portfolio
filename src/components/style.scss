@@ -4,6 +4,8 @@
 // Importing Bulma from node_modules
 @import "~bulma/bulma.sass";
 
+@import "~animate.css/animate.css";
+
 @import url(https://fonts.googleapis.com/css2?family=Bungee+Inline&display=swap);
 #name-text-1 {
   font-family: "Bungee Inline", cursive;
@@ -107,20 +109,27 @@
 @import url(https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@700&display=swap);
 #name-text-18 {
   font-family: "IBM Plex Sans", sans-serif;
+  font-size: 500%;
+}
+
+@import url(https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap);
+#h1-font {
+  font-family: "Open Sans", sans-serif;
   font-size: 400%;
 }
 
 #name-text {
-  font-size: 400%;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 500%;
 }
 
-* {
-  -webkit-overflow-scrolling: touch;
-}
+// * {
+//   -webkit-overflow-scrolling: touch;
+// }
 
 html {
   scroll-behavior: smooth;
-  -webkit-overflow-scrolling: touch;
+  // -webkit-overflow-scrolling: touch;
 }
 // body {
 //   scroll-behavior: smooth;
@@ -184,6 +193,9 @@ html {
 
 #proj-card {
   background-color: $proj-card-bg-color;
+}
+#proj-title {
+  font-weight: 700;
 }
 #proj-techs {
   background-color: $techs-bg-color;
@@ -271,6 +283,10 @@ article.card {
   a:hover {
     color: $secondary-color;
   }
+}
+
+.add-margin-bottom {
+  margin-bottom: 40px;
 }
 
 /** gradient for whole site **/

@@ -21,7 +21,7 @@ const Footer = () => (
       <footer className="footer center has-background-light">
         <div className="content has-text-centered">
           <p className="is-size-4">
-            This website was made with
+            Made with
             {` `}
             <a target="_blank" rel="noreferrer" href="https://gatsbyjs.org">
               <img className="icon" src={gatsbyLogo} alt="Logo-1" />
