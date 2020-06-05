@@ -271,13 +271,10 @@ class ProjectSection extends Component {
     }
     return (
       <React.Fragment>
-        <a className="anchor" id="projects"></a>
+        <div className="anchor" id="projects"></div>
         <section className="section has-text-black gradientBg-projects">
           <div className="container">
-            <h1
-              id="section-title"
-              className="has-text-centered is-uppercase is-size-1"
-            >
+            <h1 id="section-title" className="has-text-centered is-size-1">
               Projects
             </h1>
             {this.renderProjects()}
@@ -288,6 +285,7 @@ class ProjectSection extends Component {
             {/** End of Modal */}
           </div>
         </section>
+        <section className="hero section-edge-2"></section>
       </React.Fragment>
     );
   }

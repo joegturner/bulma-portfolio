@@ -5,13 +5,10 @@ import "./style.scss";
 const SkillSection = () => {
   return (
     <React.Fragment>
-      <a className="anchor" id="skills"></a>
+      <div className="anchor" id="skills"></div>
       <section className="section gradientBg-skills hero is-fullheight-with-navbar">
         <div className="container">
-          <h1
-            id="section-title"
-            className="title has-text-centered is-uppercase is-size-1"
-          >
+          <h1 id="section-title" className="title has-text-centered is-size-1">
             Skills
           </h1>
           <div className="tile is-ancestor">
@@ -104,6 +101,7 @@ const SkillSection = () => {
           </div>
         </div>
       </section>
+      <section className="hero section-edge-3"></section>
     </React.Fragment>
   );
 };

@@ -26,8 +26,6 @@ const HeaderGen = () => {
   ];
 
   function renderHeaders(header, index) {
-    let jsx = [];
-
     return (
       <section className="hero gradientBg-header is-fullheight-with-navbar">
         <div className="hero-body">

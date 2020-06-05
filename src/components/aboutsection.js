@@ -6,12 +6,12 @@ import "./style.scss";
 const AboutSection = ({ aboutPics }) => {
   return (
     <React.Fragment>
-      <a className="anchor" id="about"></a>
+      <div className="anchor" id="about"></div>
       <section className="section gradientBg-about hero is-fullheight-with-navbar">
         <div className="container">
           <h1
             id="section-title"
-            className="title has-text-centered is-uppercase is-size-1 has-text-black "
+            className="title has-text-centered is-size-1 has-text-black "
           >
             About me
           </h1>
@@ -30,20 +30,22 @@ const AboutSection = ({ aboutPics }) => {
             </div>
             <div className="tile is-parent is-10">
               <div id="about-card" className="content notification">
-                <p className="subtitle is-size-5">
+                <p className="subtitle is-size-5 has-text-white">
                   {" "}
                   I currently live in New York City. I have been working as an
                   Instrumentation and controls engineer in both controls design
                   and system integration within the Industrial setting for 8
                   years.{" "}
                 </p>
-                <p className="subtitle is-size-5">
+                <p className="subtitle is-size-5 has-text-white">
                   I've discovered a passion for coding, and decided to pursue my
                   new interests by learning full stack javascript development. I
                   am excited to say that I am now actively seeking an
                   opportunity to pursue my newly discovered passion as a
                   JavaScript Developer.{" "}
-                  <strong>Thank you for visiting my site!</strong>{" "}
+                  <strong className="has-text-white is-size-4">
+                    Thank you for visiting my site!
+                  </strong>{" "}
                 </p>
               </div>
             </div>
@@ -79,6 +81,7 @@ const AboutSection = ({ aboutPics }) => {
           </div>
         </div>
       </section>
+      <section className="hero section-edge-4"></section>
     </React.Fragment>
   );
 };
