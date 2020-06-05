@@ -34,7 +34,7 @@ const ContactSection = ({ aboutPics }) => {
               className="button is-white is-size-6"
             >
               <span className="icon">
-                <img className="icon" src={linkedInLogo} alt="Logo-2" />
+                <img className="icon" src={linkedInLogo} alt="logo" />
               </span>
               <span> Connect on LinkedIn</span>
             </a>
@@ -46,7 +46,7 @@ const ContactSection = ({ aboutPics }) => {
               className="button is-white is-size-6"
             >
               <span className="icon">
-                <img className="icon" src={gitHubLogo} alt="Logo-2" />
+                <img className="icon" src={gitHubLogo} alt="logo" />
               </span>
               <span>Project Source Codes</span>
             </a>

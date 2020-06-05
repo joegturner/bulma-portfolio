@@ -1,6 +1,7 @@
 import React from "react";
 
 import "./style.scss";
+import locationIcon from "../images/icon-loc.png";
 import scrollIcon from "../images/scroll-down-icon.jpg";
 
 const Header = () => (
@@ -19,6 +20,13 @@ const Header = () => (
                 <h1 id="header-sub-text" className="subtitle is-size-3">
                   Fullstack Javascript Developer{" "}
                 </h1>
+                <div className="container has-text-centered">
+                  <span>
+                    <img className="icon" src={locationIcon} alt="Logo-2" />
+                  </span>
+
+                  <span className="is-size-5">New York City</span>
+                </div>
               </div>
             </div>
           </article>

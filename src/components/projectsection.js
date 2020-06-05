@@ -49,9 +49,8 @@ class ProjectSection extends Component {
               <figure className="content image">
                 <Image imageData={projects[i].cover_image} />
               </figure>
-              {/* <div id="proj-techs" className="content"> */}
+
               {this.renderTechs(projects[i].technologies)}
-              {/* </div> */}
             </article>
           </div>
         );
@@ -68,27 +67,12 @@ class ProjectSection extends Component {
   }
 
   toggleModal = (index) => {
-    // const modal = document.querySelector("#proj-modal");
-    // console.log(modal);
-    // if (modal) {
-    //   modal.classList.remove("animate__fadeOut");
-    //   modal.classList.add("animate__fadeIn");
-    //   modal.classList.add("is-active");
-    // }
-
     const html = document.querySelector("html");
     html.classList.add("is-clipped");
     this.setState({ showModal: index });
-
-    // this.setState({ prevIndex: null });
   };
 
   closeModal = () => {
-    // const modal = document.querySelector("#proj-modal");
-    // console.log(modal);
-    // modal.classList.remove("animate__fadeIn");
-    // modal.classList.add("animate__fadeOut");
-
     const html = document.querySelector("html");
     html.classList.remove("is-clipped");
     this.setState({ showModal: null });
@@ -96,18 +80,6 @@ class ProjectSection extends Component {
     const currentIndex = this.state.showModal;
     this.setState({ prevIndex: currentIndex });
   };
-
-  // setModal = () => {
-  //   const modal = document.querySelector("#proj-modal");
-  //   if (modal) {
-  //     const active = modal.classList.value.includes("animate__fadeOut");
-  //     if (active) {
-  //       modal.classList.remove("is-active");
-  //       this.setState({ showModal: null });
-  //     }
-  //   }
-  //   console.log(modal);
-  // };
 
   rendorActiveModal = () => {
     const index = this.state.showModal;
@@ -168,13 +140,6 @@ class ProjectSection extends Component {
                   Close
                 </span>
               </div>
-
-              {/* <div className="tile is-parent is-6">
-                  {" "}
-                  <span className="button" onClick={() => this.closeModal()}>
-                    Close
-                  </span>
-                </div> */}
             </footer>
           </div>
         </div>
