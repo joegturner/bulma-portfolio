@@ -15,7 +15,13 @@ const ContactSection = ({ aboutPics }) => {
             Contact information
           </h1>
 
-          <div className="content has-text-centered">
+          <div
+            className="content has-text-centered"
+            data-aos="zoom-in-up"
+            data-aos-offset="100"
+            data-aos-easing="ease-in-sine"
+            data-aos-duration="500"
+          >
             <p
               id="email-box"
               className="tag is-size-5 has-background-white has-text-centered"
@@ -30,8 +36,12 @@ const ContactSection = ({ aboutPics }) => {
               id="contact-button"
               target="_blank"
               rel="noreferrer"
-              href="https://www.linkedin.com/in/joe-turner-90136044"
+              href="www.linkedin.com/in/joegturner"
               className="button is-white is-size-6"
+              data-aos="zoom-in-right"
+              data-aos-offset="100"
+              data-aos-easing="ease-in-sine"
+              data-aos-duration="500"
             >
               <span className="icon">
                 <img className="icon" src={linkedInLogo} alt="logo" />
@@ -44,6 +54,10 @@ const ContactSection = ({ aboutPics }) => {
               rel="noreferrer"
               href="https://github.com/joegturner"
               className="button is-white is-size-6"
+              data-aos="zoom-in-left"
+              data-aos-offset="100"
+              data-aos-easing="ease-in-sine"
+              data-aos-duration="500"
             >
               <span className="icon">
                 <img className="icon" src={gitHubLogo} alt="logo" />

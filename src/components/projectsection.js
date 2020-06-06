@@ -2,12 +2,19 @@ import React, { Component } from "react";
 
 import "./style.scss";
 import Image from "./image";
-
+import AOS from "aos";
 class ProjectSection extends Component {
   state = {
     showModal: null,
-    prevIndex: null,
   };
+
+  componentDidMount() {
+    AOS.init();
+    const body = document.querySelector("body");
+    body.addEventListener("click", (event) => {
+      this.closeModal(event.target);
+    });
+  }
 
   renderTechs(techs) {
     let jsx = [];
@@ -24,12 +31,29 @@ class ProjectSection extends Component {
   renderProjects() {
     let jsx = [];
 
+    let offset = 100;
     const { projects } = this.props;
     let inner = [];
     if (projects) {
       for (let i = 0; i < projects.length; i++) {
+        if (i > 5) {
+          offset = 80 * (i - 6);
+        } else if (i > 2) {
+          offset = 80 * (i - 3);
+        } else {
+          offset = 80 * i;
+        }
+
         inner.push(
-          <div key={i} className="column is-4">
+          <div
+            key={i}
+            data-aos="flip-up"
+            data-aos-offset={offset}
+            data-aos-easing="ease-in-sine"
+            data-aos-duration="600"
+            data-aos-anchor-placement="top-bottom"
+            className="column is-4"
+          >
             <article id="proj-card" className="card is-info has-text-centered">
               <p
                 id="h1-font"
@@ -72,13 +96,26 @@ class ProjectSection extends Component {
     this.setState({ showModal: index });
   };
 
-  closeModal = () => {
+  closeModal = (target) => {
     const html = document.querySelector("html");
-    html.classList.remove("is-clipped");
-    this.setState({ showModal: null });
+    const modal = document.querySelector("#proj-modal");
 
-    const currentIndex = this.state.showModal;
-    this.setState({ prevIndex: currentIndex });
+    if (
+      target.className === "modal-background" ||
+      target.id === "close-modal"
+    ) {
+      if (modal) {
+        modal.classList.remove("animate__zoomIn");
+        modal.classList.add("animate__zoomOut");
+
+        html.classList.remove("is-clipped");
+      }
+
+      setTimeout(() => {
+        modal.classList.remove("is-active");
+        this.setState({ showModal: null });
+      }, 500);
+    }
   };
 
   rendorActiveModal = () => {
@@ -96,9 +133,10 @@ class ProjectSection extends Component {
             <header id="proj-card" className="modal-card-head">
               <p className="modal-card-title">{project.project_name}</p>
               <button
+                id="close-modal"
                 className="delete"
                 aria-label="close"
-                onClick={() => this.closeModal()}
+                onClick={(event) => this.closeModal(event.target)}
               ></button>
             </header>
             <section className="modal-card-body">
@@ -134,90 +172,13 @@ class ProjectSection extends Component {
                   Source Code
                 </a>{" "}
                 <span
+                  id="close-modal"
                   className="button is-hidden-mobile"
-                  onClick={() => this.closeModal()}
+                  onClick={(event) => this.closeModal(event.target)}
                 >
                   Close
                 </span>
               </div>
-            </footer>
-          </div>
-        </div>
-      );
-    } else {
-      return null;
-    }
-  };
-
-  renderHiddenModal = () => {
-    const index = this.state.showModal;
-    const prevIndex = this.state.prevIndex;
-
-    if (index === null && prevIndex !== null) {
-      const project = this.props.projects[prevIndex];
-      // this.setState({ prevIndex: null });
-
-      return (
-        <div
-          id="proj-modal"
-          className="modal animate__animated animate__fadeOut"
-        >
-          <div className="modal-background"></div>
-          <div className="modal-card">
-            <header id="proj-card" className="modal-card-head">
-              <p className="modal-card-title">{project.project_name}</p>
-              <button
-                className="delete"
-                aria-label="close"
-                onClick={() => this.closeModal()}
-              ></button>
-            </header>
-            <section className="modal-card-body">
-              <div className="tile is-ancestor">
-                <div className="tile is-parent">
-                  <article className="tile is-child has-text-black has-text-centered">
-                    <p className="is-size-5">{project.description}</p>
-                    <figure className="image box">
-                      <Image imageData={project.cover_image} />
-                    </figure>
-                    <p className="is-size-4">Utilizes: </p>
-                    {this.renderTechs(project.technologies)}
-                  </article>
-                </div>
-              </div>
-            </section>
-            <footer className="modal-card-foot">
-              <div className="">
-                <a
-                  href={project.live_link}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="button"
-                >
-                  Live Demo
-                </a>
-                <a
-                  href={project.github_link}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="button"
-                >
-                  Source Code
-                </a>{" "}
-                <span
-                  className="button is-hidden-mobile"
-                  onClick={() => this.closeModal()}
-                >
-                  Close
-                </span>
-              </div>
-
-              {/* <div className="tile is-parent is-6">
-                  {" "}
-                  <span className="button" onClick={() => this.closeModal()}>
-                    Close
-                  </span>
-                </div> */}
             </footer>
           </div>
         </div>
@@ -244,10 +205,7 @@ class ProjectSection extends Component {
             </h1>
             {this.renderProjects()}
 
-            {/** Start of Modal */}
             {this.rendorActiveModal()}
-            {/* {this.renderHiddenModal()} */}
-            {/** End of Modal */}
           </div>
         </section>
         <section className="hero section-edge-2"></section>

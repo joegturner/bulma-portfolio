@@ -17,7 +17,13 @@ const AboutSection = ({ aboutPics }) => {
           </h1>
           <div className="tile is-ancestor">
             <div className="tile is-parent is-2">
-              <article className="tile is-child">
+              <article
+                className="tile is-child"
+                data-aos="zoom-in"
+                data-aos-offset="100"
+                data-aos-easing="ease-in-sine"
+                data-aos-duration="800"
+              >
                 <figure className="image is-fullwidth">
                   <Img
                     id="about-pic"
@@ -40,9 +46,8 @@ const AboutSection = ({ aboutPics }) => {
                 <p className="subtitle is-size-5 has-text-white">
                   I've discovered a passion for coding, and decided to pursue my
                   new interests by learning full stack javascript development. I
-                  am excited to say that I am now actively seeking an
-                  opportunity to pursue my newly discovered passion as a
-                  JavaScript Developer.{" "}
+                  am now actively seeking an opportunity to work as a JavaScript
+                  Developer.{" "}
                   <strong className="has-text-white is-size-4">
                     Thank you for visiting my site!
                   </strong>{" "}

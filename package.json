@@ -5,6 +5,7 @@
   "author": "Joe Turner <joe.g.turner@gmail.com>",
   "dependencies": {
     "animate.css": "^4.1.0",
+    "aos": "^2.3.4",
     "bulma": "^0.8.2",
     "gatsby": "^2.20.18",
     "gatsby-image": "^2.3.2",

@@ -16,6 +16,10 @@ const SkillSection = () => {
               <article
                 id="skill-card"
                 className="tile notification is-child is-info"
+                data-aos="zoom-in-right"
+                data-aos-offset="100"
+                data-aos-easing="ease-in-sine"
+                data-aos-duration="800"
               >
                 <h3 className="title">Back End</h3>
 
@@ -33,6 +37,10 @@ const SkillSection = () => {
               <article
                 id="skill-card"
                 className="tile notification is-child is-info"
+                data-aos="zoom-in-left"
+                data-aos-offset="100"
+                data-aos-easing="ease-in-sine"
+                data-aos-duration="800"
               >
                 <h3 className="title">Front End</h3>
                 <div className="tile is-ancestor">
@@ -57,6 +65,10 @@ const SkillSection = () => {
               <article
                 id="skill-card"
                 className="tile notification is-child is-info"
+                data-aos="zoom-in-right"
+                data-aos-offset="100"
+                data-aos-easing="ease-in-sine"
+                data-aos-duration="800"
               >
                 <h3 className="title">Development</h3>
 
@@ -82,6 +94,10 @@ const SkillSection = () => {
               <article
                 id="skill-card"
                 className="tile notification is-child is-info"
+                data-aos="zoom-in-right"
+                data-aos-offset="100"
+                data-aos-easing="ease-in-sine"
+                data-aos-duration="800"
               >
                 <h3 className="title">Database</h3>
 

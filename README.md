@@ -3,7 +3,7 @@
 - Thank you for checking my Github Portfolio repo!
 - Feel free to contact me at joe.g.turner@gmail.com
 - Check out my live portfolio out: [Live Portfolio](https://joegturner.com)
-- Let's connect on Linkedin: [LinkedIn](https://www.linkedin.com/in/joe-turner-90136044)
+- Let's connect on Linkedin: [LinkedIn](www.linkedin.com/in/joegturner)
 
 # My Portfolio
 

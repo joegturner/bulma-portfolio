@@ -5,6 +5,7 @@
 @import "~bulma/bulma.sass";
 
 @import "~animate.css/animate.css";
+@import "~aos/dist/aos.css";
 
 @import url(https://fonts.googleapis.com/css2?family=Bungee+Inline&display=swap);
 #name-text-1 {
@@ -183,22 +184,22 @@ html {
 }
 
 .section-edge-1 {
-  height: 200px;
+  height: 10px;
   background-image: linear-gradient(to bottom, #f7f7f7 0%, #c7e1f9 100%);
 }
 
 .section-edge-2 {
-  height: 200px;
+  height: 10px;
   background-image: linear-gradient(to bottom, #c7e1f9 0%, #e8b2b8 100%);
 }
 
 .section-edge-3 {
-  height: 200px;
+  height: 10px;
   background-image: linear-gradient(to bottom, #e8b2b8 0%, #c2ede6 100%);
 }
 
 .section-edge-4 {
-  height: 200px;
+  height: 10px;
   background-image: linear-gradient(to bottom, #c2ede6 0%, #f2f280 100%);
 }
 #proj-card {

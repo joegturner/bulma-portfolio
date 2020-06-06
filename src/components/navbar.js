@@ -12,6 +12,9 @@ class Navbar extends Component {
     const navBar = document.querySelector("#navbarMenu");
     const active = navBar.classList.value.includes("is-active");
 
+    // dodgy logic to manage open close of nav menu
+    // click nav button => open nav menu
+    // close nave menu if user clicks nav button or anywhere outside of nav menu
     if (event && !this.state.flag) {
       if (active) {
         navBar.classList.remove("is-active");
