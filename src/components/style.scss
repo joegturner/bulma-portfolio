@@ -122,19 +122,36 @@
   font-family: "Arimo", sans-serif;
   font-size: 500%;
   line-height: 95%;
+  color: $text-color-blue;
 }
 #header-sub-text {
   font-family: "Open Sans", sans-serif;
   font-size: 400%;
   margin-top: 50px;
   line-height: 150%;
+  color: $text-color-white-blue;
 }
 #header-text {
   font-family: "Open Sans", sans-serif;
 }
 
+.text-is-bright-blue {
+  color: $text-color-grey;
+}
+
 #section-title {
   font-family: "IBM Plex Sans", sans-serif;
+  color: $text-color-white-blue;
+}
+
+#section-title-dark {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  color: $text-color-black;
+}
+
+#skill-text {
+  color: $text-color-black;
 }
 
 // * {
@@ -204,6 +221,7 @@ html {
 }
 #proj-card {
   background-color: $proj-card-bg-color;
+  border-radius: 4px;
 }
 #proj-title {
   font-weight: 700;
@@ -216,26 +234,38 @@ html {
 }
 
 #about-card {
-  background-color: $about-card-bg-color;
-  border: 1px solid $edu-card-bg-color;
+  background-color: $about-sect-bg-color;
+  // border: 1px solid $edu-card-bg-color;
 }
 .about-pic {
   border-radius: 50%;
   border: 1.5px solid $edu-card-bg-color;
 }
+article.card {
+  padding: 1rem 1rem 1rem 1rem;
+}
+#edu-anchor {
+  background-color: $edu-card-bg-color;
+  padding: 1.25rem 1.5rem 1.25rem 1.5rem;
+  // width: 70%;
+  margin: auto;
+}
 #edu-card {
   background-color: $edu-card-bg-color;
+  padding: 1.25rem 1.5rem 1.25rem 1.5rem;
+  // width: 70%;
+  margin: auto;
 }
 .contact-pic {
   border-radius: 50%;
-  border: 1.5px solid $contact-card-bg-color;
+  border: 1.5px solid $text-color-grey;
 }
 #contact-button {
   // border: 1px solid #000;
   margin: 1% 1% 1% 1%;
 }
 #email-box {
-  border: 1px solid $contact-card-bg-color;
+  border: 1px solid $text-color-grey;
 }
 #contact-linkedin {
   float: right;

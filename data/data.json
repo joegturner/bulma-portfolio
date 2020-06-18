@@ -1,6 +1,17 @@
 {
   "projects": [
     {
+      "id": 10,
+      "project_name": "Twitter Clone for Dogs",
+      "description": "Social media app for dogs and cats! Utilizes Firebase cloud services as the back end. React and Redux are used along with Material UI for the front end.",
+      "technologies": ["React", "Redux", "Material UI", "Express", "Firebase"],
+      "live_link": "https://socialdoggo-448a0.firebaseapp.com/",
+      "github_link": "https://github.com/joegturner/redux-socialapp",
+      "cover_image": {
+        "src": "../src/images/redux-social-dog.png"
+      }
+    },
+    {
       "id": 1,
       "project_name": "Fullstack Courses App",
       "description": "Fictional courses manager with React rendering the UI and Express as the restful API server which runs a relational database using the promised based ORM called sequelize.",

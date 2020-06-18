@@ -36,12 +36,12 @@ const ContactSection = ({ aboutPics }) => {
               id="contact-button"
               target="_blank"
               rel="noreferrer"
-              href="www.linkedin.com/in/joegturner"
+              href="https://www.linkedin.com/in/joegturner"
               className="button is-white is-size-6"
               data-aos="zoom-in-right"
-              data-aos-offset="100"
-              data-aos-easing="ease-in-sine"
-              data-aos-duration="500"
+              data-aos-offset="0"
+              data-aos-easing="linear"
+              data-aos-duration="100"
             >
               <span className="icon">
                 <img className="icon" src={linkedInLogo} alt="logo" />

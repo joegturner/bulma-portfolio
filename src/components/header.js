@@ -2,7 +2,7 @@ import React from "react";
 
 import "./style.scss";
 import locationIcon from "../images/icon-loc.png";
-import scrollIcon from "../images/scroll-down-icon.jpg";
+import scrollIcon from "../images/scroll-down-icon.png";
 
 const Header = () => (
   <>
@@ -13,11 +13,14 @@ const Header = () => (
           <article className="media">
             <div className="media-content">
               <div className="content has-text-centered">
-                <h1 id="name-text" className="title has-text-black">
+                <h1 id="name-text" className="title">
                   Joe Turner
                 </h1>
 
-                <h1 id="header-sub-text" className="subtitle is-size-3">
+                <h1
+                  id="header-sub-text"
+                  className="subtitle is-size-3 text-is-bright-blue"
+                >
                   Fullstack Javascript Developer{" "}
                 </h1>
                 <div className="container has-text-centered">
@@ -25,7 +28,9 @@ const Header = () => (
                     <img className="icon" src={locationIcon} alt="Logo-2" />
                   </span>
 
-                  <span className="is-size-5">New York City</span>
+                  <span className="is-size-5 text-is-bright-blue">
+                    New York City
+                  </span>
                 </div>
               </div>
             </div>
@@ -34,7 +39,10 @@ const Header = () => (
       </div>
       <div className="has-text-centered">
         {" "}
-        <p id="header-text" className="subtitle is-italic is-size-4">
+        <p
+          id="header-text"
+          className="subtitle is-italic is-size-4 text-is-bright-blue"
+        >
           Welcome to my Portfolio Site
         </p>
         <div className="add-margin-bottom">
@@ -42,7 +50,7 @@ const Header = () => (
         </div>
       </div>
     </section>
-    <section className="hero section-edge-1"></section>
+    {/* <section className="hero section-edge-1"></section> */}
   </>
 );
 

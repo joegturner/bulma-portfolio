@@ -189,18 +189,15 @@ class ProjectSection extends Component {
   };
 
   render() {
-    const index = this.state.showModal;
-    let project = null;
-
-    if (index !== null) {
-      project = this.props.projects[index];
-    }
     return (
       <React.Fragment>
         <div className="anchor" id="projects"></div>
         <section className="section has-text-black gradientBg-projects">
           <div className="container">
-            <h1 id="section-title" className="has-text-centered is-size-1">
+            <h1
+              id="section-title-dark"
+              className="title has-text-centered is-size-1"
+            >
               Projects
             </h1>
             {this.renderProjects()}
@@ -208,7 +205,7 @@ class ProjectSection extends Component {
             {this.rendorActiveModal()}
           </div>
         </section>
-        <section className="hero section-edge-2"></section>
+        {/* <section className="hero section-edge-2"></section> */}
       </React.Fragment>
     );
   }

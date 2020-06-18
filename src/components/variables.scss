@@ -1,11 +1,14 @@
 // VARIABLES
 
+// blue and white
 $primary-color: #50b4fc;
 $secondary-color: #e8e9f3;
 
+// grey and white
 // $secondary-color: #436282;
 // $primary-color: #eaeaea;
 
+// blues
 // $primary-color: #2980b9;
 // $secondary-color: #6dd5fa;
 
@@ -15,24 +18,37 @@ $card-background-color: #216ab2;
 
 /** For individual back grounds**/
 
-$header-sect-bg-color: #f7f7f7;
-// $header-sect-bg-color: #b2cfe8;
+$text-color-black: #24272b;
+$text-color-blue: #50d7fc;
+$text-color-grey: #c7d3e2;
+$text-color-white-blue: #ebfbff;
 
-$proj-sect-bg-color: #c7e1f9;
-$skills-sect-bg-color: #e8b2b8;
-$about-sect-bg-color: #c2ede6;
-$contact-sect-bg-color: #f2f280;
+$header-sect-bg-color: #24272b;
+
+$proj-sect-bg-color: #ebfbff;
+$skills-sect-bg-color: #24272b;
+$about-sect-bg-color: #ebfbff;
+$contact-sect-bg-color: #24272b;
 
 /** For alternating backgrounds **/
 
-// $proj-sect-bg-color: $primary-color;
-// $skills-sect-bg-color: $secondary-color;
-// $about-sect-bg-color: $primary-color;
-// $contact-sect-bg-color: $secondary-color;
-
-$proj-card-bg-color: #50b4fc;
+$proj-card-bg-color: #50d7fc;
 $techs-bg-color: #50b4fc;
-$skill-card-bg-color: #c63140;
-$about-card-bg-color: #316845;
-$edu-card-bg-color: #316845;
+$skill-card-bg-color: #50d7fc;
+$about-card-bg-color: #50d7fc;
+$edu-card-bg-color: #50d7fc;
 $contact-card-bg-color: #e5e817;
+
+// Before Aaron
+// $header-sect-bg-color: #f7f7f7;
+// $header-sect-bg-color: #b2cfe8;
+// $proj-sect-bg-color: #EBFBFF;
+// $skills-sect-bg-color: #e8b2b8;
+// $about-sect-bg-color: #c2ede6;
+// $contact-sect-bg-color: #f2f280;
+// $proj-card-bg-color: #50d7fc;
+// $techs-bg-color: #50b4fc;
+// $skill-card-bg-color: #c63140;
+// $about-card-bg-color: #316845;
+// $edu-card-bg-color: #316845;
+// $contact-card-bg-color: #e5e817;
