@@ -7,7 +7,7 @@
     "animate.css": "^4.1.0",
     "aos": "^2.3.4",
     "bulma": "^0.8.2",
-    "gatsby": "^2.20.18",
+    "gatsby": "^5.14.1",
     "gatsby-image": "^2.3.2",
     "gatsby-plugin-google-analytics": "^2.2.2",
     "gatsby-plugin-manifest": "^2.3.3",
